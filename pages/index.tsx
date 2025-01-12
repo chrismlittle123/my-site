@@ -58,14 +58,14 @@ const HomePage: React.FC = () => {
               href="/machine-learning"
               icon={CpuChipIcon}
               title="Machine Learning"
-              description="ML model development and GenAI"
+              description="ML and statistical model development and deployment"
               iconColor="text-red-700"
             />
             <ProjectTile
               href="/python-packages"
               icon={CodeBracketIcon}
               title="Python Packages"
-              description="Open-source Python library contributions"
+              description="Open-source Python package contributions"
               iconColor="text-purple-700"
             />
           </div>

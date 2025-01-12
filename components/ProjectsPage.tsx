@@ -27,7 +27,7 @@ interface ProjectPageProps {
   projects: ProjectData[];
 }
 
-const ProjectsPage: React.FC<ProjectPageProps> = ({ title, description, icon: Icon, projects }) => {
+const ProjectsPage: React.FC<ProjectPageProps> = ({ title, projects }) => {
   return (
     <div>
       <NavBar />

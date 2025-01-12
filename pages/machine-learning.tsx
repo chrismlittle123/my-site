@@ -1,29 +1,34 @@
 import React from 'react';
 import ProjectsPage from '../components/ProjectsPage';
 import { CpuChipIcon } from '@heroicons/react/24/outline';
-import { CodeBracketIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 
 const MachineLearning: React.FC = () => {
   const projects = [
     {
-      title: "ML Model Pipeline",
-      description: "End-to-end machine learning pipeline for training and deploying deep learning models. Includes data preprocessing, model training, evaluation metrics and model serving infrastructure.",
+      title: "Solar Site Detection Model",
+      description: "A model that detects solar sites from satellite imagery. The model is trained on a dataset of satellite imagery (Google Maps) and labeled solar sites (Public datasets). Deployed using Docker + FastAPI and weights hosted on HuggingFace.",
       technologies: [
-        { icon: CodeBracketIcon, name: "Python" },
-        { icon: CodeBracketIcon, name: "TensorFlow" },
-        { icon: CodeBracketIcon, name: "PyTorch" }
+        { icon: () => <Image src="/images/python.svg" alt="Python" width={32} height={32} />, name: "Python" },
+        { icon: () => <Image src="/images/docker.svg" alt="Docker" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "Docker" },
+        { icon: () => <Image src="/images/fastapi.svg" alt="FastAPI" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "FastAPI" }
       ],
-      githubUrl: "https://github.com/username/ml-model-pipeline"
+      image: {
+        src: "solar_site_detection_model.jpg",
+        alt: "Solar Site Detection Model"
+      }
     },
     {
-      title: "GenAI Applications",
-      description: "Suite of generative AI applications leveraging large language models and diffusion models. Includes fine-tuning, prompt engineering and deployment optimizations.",
+      title: "Solar Irradiance Forecasting Model",
+      description: "A model that predicts long-term solar irradiance trends. The model is trained on a dataset of irradiance data (SolarGIS) and global climate data (ERA5). A autoregressive integrated moving average (ARIMA) model is used to forecast the irradiance data. I built a calculation engine that serves a dashboard in Tableau.",
       technologies: [
-        { icon: CodeBracketIcon, name: "Python" },
-        { icon: CodeBracketIcon, name: "TensorFlow" },
-        { icon: CodeBracketIcon, name: "HuggingFace" }
+        { icon: () => <Image src="/images/python.svg" alt="Python" width={32} height={32} />, name: "Python" },
+        { icon: () => <Image src="/images/tableau.svg" alt="Tableau" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "Tableau" },
       ],
-      githubUrl: "https://github.com/username/genai-applications"
+      image: {
+        src: "solar_irradiance_forecasting_model.jpg", 
+        alt: "Solar Irradiance Forecasting Model"
+      }
     }
   ];
 
