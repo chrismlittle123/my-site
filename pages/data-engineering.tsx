@@ -7,7 +7,7 @@ const DataEngineering: React.FC = () => {
   const projects = [
     {
       title: "Weather and Financial Data Pipeline",
-      description: "Developed a data pipeline and backend for a large-scale financial analysis application. The app integrated weather data, energy prices, and site-specific data to calculate expected solar site revenues, used by the finance team to make investment decisions. Integrated financial data (Bloomberg API) with weather data (SolarGIS API) and site-specific data (Google Maps API) and processed using Apache Spark. Time series data on solar production from existing solar sites was also integrated into the tool, data was streamed into a data warehouse using Apache Kafka. Below is an architecture diagram of the pipeline.",
+      description: "Developed a data pipeline and backend for a large-scale financial analysis application.\n\nThe app integrated weather data, energy prices, and site-specific data to calculate expected solar site revenues, used by the finance team to make investment decisions. Integrated financial data (Bloomberg API) with weather data (SolarGIS API) and site-specific data (Google Maps API) and processed using Apache Spark.\n\nTime series data on solar production from existing solar sites was also integrated into the tool, data was streamed into a data warehouse using Apache Kafka. Below is an architecture diagram of the pipeline.",
       technologies: [
         { icon: () => <Image src="/images/python.svg" alt="Python" width={32} height={32} />, name: "Python" },
         { icon: () => <Image src="/images/apache_spark.svg" alt="Apache Spark" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "Apache Spark" },
