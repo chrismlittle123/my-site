@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar';
 import { ForwardRefExoticComponent, RefAttributes, SVGProps } from 'react';
 import Image from 'next/image';
 import { CodeBracketIcon } from '@heroicons/react/24/outline';
-import SlideShow from './SlideShow';
+import SlideShow from '../components/SlideShow';
 
 interface TechnologyProps {
   icon: ForwardRefExoticComponent<SVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>>;
@@ -51,7 +51,6 @@ const ProjectsPage: React.FC<ProjectPageProps> = ({ title, description, icon: Ic
                         images={project.images}
                         width={500}
                         height={300}
-                        autoPlayInterval={5000}
                       />
                     </div>
                   )}

@@ -7,7 +7,7 @@ const SoftwareEngineering: React.FC = () => {
   const projects = [
     {
       title: "Simply Comply",
-      description: "Built a compliance management platform that helps mortgages brokers run identity, income verification and credit checks all in one place.\n\nThe app can extract data from dozens of UK banks, using a PDF parsing library that I built.\n\nThe backend is Typescript + PostgreSQL, with a React + Next.js frontend.",
+      description: "Built a compliance management platform that helps mortgages brokers run identity, income verification and credit checks all in one place.\n\nThe app can extract data from dozens of UK banks, using a PDF parsing library that I built.\n\nThe backend is Typescript + PostgreSQL, with a React + Next.js frontend.\n\nSee slides below.",
       technologies: [
         { icon: () => <Image src="/images/react.svg" alt="React" width={32} height={32} />, name: "React" },
         { icon: () => <Image src="/images/typescript.svg" alt="TypeScript" width={32} height={32} />, name: "TypeScript" },
@@ -36,7 +36,7 @@ const SoftwareEngineering: React.FC = () => {
     },
     {
       title: "Car Rental Site Scraping Tool",
-      description: "Built a tool that ethically scrapes car rental site data to help a client be price competitive.\n\nThe frontend is built with Streamlit + Python. To run the scrape, I used Docker (for the scraping), Terraform (for the infrastructure) and AWS Glue + Athena + S3 (for the ETL pipeline).\n\nThe tool is deployed on AWS and can be scaled to handle several scrapes per day in many locations.",
+      description: "Built a tool that ethically scrapes car rental site data to help a client be price competitive.\n\nThe frontend is built with Streamlit + Python. To run the scrape, I used Docker (for the scraping), Terraform (for the infrastructure) and AWS Glue + Athena + S3 (for the ETL pipeline).\n\nThe tool is deployed on AWS and can be scaled to handle several scrapes per day in many locations.\n\nSee slides below.",
       technologies: [
           { icon: () => <Image src="/images/python.svg" alt="Python" width={32} height={32}  />, name: "Python" },
         { icon: () => <Image src="/images/streamlit.svg" alt="Streamlit" width={32} height={32} />, name: "Streamlit" },
