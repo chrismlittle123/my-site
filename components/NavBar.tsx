@@ -14,11 +14,11 @@ const NavBar: React.FC = () => {
             </div>
           </div>
           <div className="flex items-center mt-4 md:mt-0">
-            <Link href="/" className="px-3 py-2 rounded-md text-sm font-medium">Home</Link>
-            <Link href="/data-engineering" className="px-3 py-2 rounded-md text-sm font-medium">Data Engineering</Link>
-            <Link href="/software-engineering" className="px-3 py-2 rounded-md text-sm font-medium">Software Engineering</Link>
-            <Link href="/machine-learning" className="px-3 py-2 rounded-md text-sm font-medium">Machine Learning</Link>
-            <Link href="/python-packages" className="px-3 py-2 rounded-md text-sm font-medium">Python Packages</Link>
+            <Link href="/" className="px-3 py-2 rounded-md text-m font-medium">Home</Link>
+            <Link href="/data-engineering" className="px-3 py-2 rounded-md text-m font-medium">Data Engineering</Link>
+            <Link href="/software-engineering" className="px-3 py-2 rounded-md text-m font-medium">Software Engineering</Link>
+            <Link href="/machine-learning" className="px-3 py-2 rounded-md text-m font-medium">Machine Learning</Link>
+            <Link href="/python-packages" className="px-3 py-2 rounded-md text-m font-medium">Python Packages</Link>
           </div>
         </div>
       </div>
