@@ -9,7 +9,7 @@ const NavBar: React.FC = () => {
           <div className="flex justify-between items-center">
             <div className="text-xl font-semibold text-gray-700">
               <a href="/" className="hover:text-gray-900 transition duration-150">
-                My Site
+                Christopher Little
               </a>
             </div>
           </div>
