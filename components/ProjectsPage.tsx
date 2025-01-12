@@ -6,7 +6,7 @@ import { CodeBracketIcon } from '@heroicons/react/24/outline';
 
 interface TechnologyProps {
   name: string;
-  icon: string;
+  icon: ForwardRefExoticComponent<SVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>>;
   invert: boolean;
 }
 
