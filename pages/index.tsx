@@ -15,15 +15,15 @@ const HomePage: React.FC = () => {
         <p className="text-lg mb-20">Welcome to my personal portfolio site.</p>
         <div className="grid grid-cols-3 gap-x-24 mb-24 w-full max-w-2xl mx-auto">
           <a href="https://linkedin.com" className="hover:text-blue-400 transition flex flex-col items-center">
-            <LinkIcon className="h-8 w-8 mb-2 text-blue-500" />
+            <LinkIcon className="h-8 w-8 mb-4 text-blue-500" />
             <span className="text-2xl font-mono text-white">LinkedIn</span>
           </a>
           <a href="https://github.com" className="hover:text-red-400 transition flex flex-col items-center">
-            <CodeBracketIcon className="h-8 w-8 mb-2 text-red-500" />
+            <CodeBracketIcon className="h-8 w-8 mb-4 text-red-500" />
             <span className="text-2xl font-mono text-white">GitHub</span>
           </a>
           <a href="/cv" className="hover:text-orange-400 transition flex flex-col items-center">
-            <DocumentTextIcon className="h-8 w-8 mb-2 text-orange-500" />
+            <DocumentTextIcon className="h-8 w-8 mb-4 text-orange-500" />
             <span className="text-2xl font-mono text-white">CV</span>
           </a>
         </div>
