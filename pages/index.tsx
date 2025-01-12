@@ -39,24 +39,24 @@ const HomePage: React.FC = () => {
         </div>
         <div className="relative z-10 max-w-5xl mx-auto p-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <Link href="/data-engineering" className="bg-black shadow-md p-4 rounded-lg hover:shadow-lg transition max-w-sm mx-auto w-full h-40 flex flex-col items-center justify-center">
-              <CircleStackIcon className="h-8 w-8 mb-2 text-purple-600" />
-              <h2 className="text-xl font-semibold mb-2">Data Engineering</h2>
+            <Link href="/data-engineering" className="bg-black shadow-md p-4 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 max-w-sm mx-auto w-full h-40 flex flex-col items-center justify-center">
+              <CircleStackIcon className="h-8 w-8 mb-2 text-purple-700" />
+              <h2 className="text-xl font-semibold mb-2 text-blue-200">Data Engineering</h2>
               <p className="text-center">Scalable data pipelines and infrastructure</p>
             </Link>
-            <Link href="/software-engineering" className="bg-black shadow-md p-4 rounded-lg hover:shadow-lg transition max-w-sm mx-auto w-full h-40 flex flex-col items-center justify-center">
-              <CogIcon className="h-8 w-8 mb-2 text-purple-600" />
-              <h2 className="text-xl font-semibold mb-2">Software Engineering</h2>
+            <Link href="/software-engineering" className="bg-black shadow-md p-4 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 max-w-sm mx-auto w-full h-40 flex flex-col items-center justify-center">
+              <CogIcon className="h-8 w-8 mb-2 text-purple-700" />
+              <h2 className="text-xl font-semibold mb-2 text-blue-200">Software Engineering</h2>
               <p className="text-center">Full-stack development</p>
             </Link>
-            <Link href="/machine-learning" className="bg-black shadow-md p-4 rounded-lg hover:shadow-lg transition max-w-sm mx-auto w-full h-40 flex flex-col items-center justify-center">
-              <CpuChipIcon className="h-8 w-8 mb-2 text-purple-600" />
-              <h2 className="text-xl font-semibold mb-2">Machine Learning</h2>
+            <Link href="/machine-learning" className="bg-black shadow-md p-4 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 max-w-sm mx-auto w-full h-40 flex flex-col items-center justify-center">
+              <CpuChipIcon className="h-8 w-8 mb-2 text-purple-700" />
+              <h2 className="text-xl font-semibold mb-2 text-blue-200">Machine Learning</h2>
               <p className="text-center">ML model development and GenAI</p>
             </Link>
-            <Link href="/python-packages" className="bg-black shadow-md p-4 rounded-lg hover:shadow-lg transition max-w-sm mx-auto w-full h-40 flex flex-col items-center justify-center">
-              <CodeBracketIcon className="h-8 w-8 mb-2 text-purple-600" />
-              <h2 className="text-xl font-semibold mb-2">Python Packages</h2>
+            <Link href="/python-packages" className="bg-black shadow-md p-4 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 max-w-sm mx-auto w-full h-40 flex flex-col items-center justify-center">
+              <CodeBracketIcon className="h-8 w-8 mb-2 text-purple-700" />
+              <h2 className="text-xl font-semibold mb-2 text-blue-200">Python Packages</h2>
               <p className="text-center">Open-source Python library contributions</p>
             </Link>
           </div>
