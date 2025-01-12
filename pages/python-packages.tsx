@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectsPage from '../components/ProjectsPage';
-import { CodeBracketIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 
 const PythonPackages: React.FC = () => {
@@ -26,7 +25,6 @@ const PythonPackages: React.FC = () => {
   return (
     <ProjectsPage 
       title="Python Packages"
-      icon={CodeBracketIcon}
       projects={projects}
     />
   );

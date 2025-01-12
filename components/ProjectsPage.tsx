@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import NavBar from '../components/NavBar';
 import { ForwardRefExoticComponent, RefAttributes, SVGProps } from 'react';
 import Image from 'next/image';
@@ -26,8 +26,7 @@ interface ProjectPageProps {
   icon: ForwardRefExoticComponent<SVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>>;
   projects: ProjectData[];
 }
-
-const ProjectsPage: React.FC<ProjectPageProps> = ({ title, projects }) => {
+const ProjectsPage: React.FC<ProjectPageProps> = ({ title, projects }): React.ReactElement => {
   return (
     <div>
       <NavBar />
