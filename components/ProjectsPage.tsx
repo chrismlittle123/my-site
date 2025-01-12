@@ -28,15 +28,14 @@ const ProjectsPage: React.FC<ProjectPageProps> = ({ title, description, icon: Ic
     <div>
       <NavBar />
       <div className="relative">
-        <Image src="/images/colours.png" alt="Background" layout="fill" className="object-cover opacity-30" />
+        <Image src="/images/colours.png" alt="Background" layout="fill" className="object-cover opacity-70" />
         <div className="relative z-10 p-8">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl font-bold text-white mb-8 text-center">{title}</h1>
-            <p className="text-xl mb-8 text-center">{description}</p>
+          <div className="max-w-5xl mx-auto">
+            <h1 className="text-5xl font-bold text-white mb-12 text-center">{title}</h1>
 
-            <div className="grid grid-cols-2 gap-x-12">
+            <div className="grid grid-cols-2 gap-x-16">
               {projects.map((project, projectIndex) => (
-                <div key={projectIndex}>
+                <div key={projectIndex} className="bg-black bg-opacity-60 rounded-lg p-6">
                   <h2 className="text-4xl font-bold mb-6 text-center">{project.title}</h2>
                   <p className="text-gray-100 mb-6 text-lg whitespace-pre-wrap">
                     {project.description}
