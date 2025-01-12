@@ -10,7 +10,7 @@ const MachineLearning: React.FC = () => {
       description: "A model that detects solar sites from satellite imagery. The model is trained on a dataset of satellite imagery (Google Maps) and labeled solar sites (Public datasets). Deployed using Docker + FastAPI and weights hosted on HuggingFace.",
       technologies: [
         { icon: () => <Image src="/images/python.svg" alt="Python" width={32} height={32} />, name: "Python" },
-        { icon: () => <Image src="/images/docker.svg" alt="Docker" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "Docker" },
+        { icon: () => <Image src="/images/docker.svg" alt="Docker" width={32} height={32}  />, name: "Docker" },
         { icon: () => <Image src="/images/fastapi.svg" alt="FastAPI" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "FastAPI" }
       ],
       image: {
@@ -20,10 +20,10 @@ const MachineLearning: React.FC = () => {
     },
     {
       title: "Solar Irradiance Forecasting Model",
-      description: "A model that predicts long-term solar irradiance trends. The model is trained on a dataset of irradiance data (SolarGIS) and global climate data (ERA5). A autoregressive integrated moving average (ARIMA) model is used to forecast the irradiance data. I built a calculation engine that serves a dashboard in Tableau.",
+      description: "A model that predicts long-term solar irradiance trends. The model is trained on a dataset of irradiance data (SolarGIS) and global climate data (ERA5). I used an autoregressive integrated moving average (ARIMA) model to forecast the irradiance data. I then built a forecasting engine that serves a dashboard in Tableau.",
       technologies: [
         { icon: () => <Image src="/images/python.svg" alt="Python" width={32} height={32} />, name: "Python" },
-        { icon: () => <Image src="/images/tableau.svg" alt="Tableau" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "Tableau" },
+        { icon: () => <Image src="/images/tableau.svg" alt="Tableau" width={32} height={32} />, name: "Tableau" },
       ],
       image: {
         src: "solar_irradiance_forecasting_model.jpg", 

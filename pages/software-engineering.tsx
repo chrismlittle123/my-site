@@ -10,8 +10,8 @@ const SoftwareEngineering: React.FC = () => {
       description: "Built a compliance management platform that helps mortgages brokers run identity, income verification and credit checks all in one place.\n\nThe app can extract data from dozens of UK banks, using a PDF parsing library that I built.\n\nThe backend is Typescript + PostgreSQL, with a React + Next.js frontend.",
       technologies: [
         { icon: () => <Image src="/images/react.svg" alt="React" width={32} height={32} />, name: "React" },
-        { icon: () => <Image src="/images/typescript.svg" alt="TypeScript" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "TypeScript" },
-        { icon: () => <Image src="/images/postgresql.svg" alt="PostgreSQL" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "PostgreSQL" },
+        { icon: () => <Image src="/images/typescript.svg" alt="TypeScript" width={32} height={32} />, name: "TypeScript" },
+        { icon: () => <Image src="/images/postgresql.svg" alt="PostgreSQL" width={32} height={32}  />, name: "PostgreSQL" },
         { icon: () => <Image src="/images/next_js.svg" alt="Next.js" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "Next.js" }
       ],
       githubUrl: null,
@@ -38,10 +38,10 @@ const SoftwareEngineering: React.FC = () => {
       title: "Car Rental Site Scraping Tool",
       description: "Built a tool that ethically scrapes car rental site data to help a client be price competitive.\n\nThe frontend is built with Streamlit + Python. To run the scrape, I used Docker (for the scraping), Terraform (for the infrastructure) and AWS Glue + Athena + S3 (for the ETL pipeline).\n\nThe tool is deployed on AWS and can be scaled to handle several scrapes per day in many locations.",
       technologies: [
-        { icon: () => <Image src="/images/streamlit.svg" alt="Streamlit" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "Streamlit" },
-        { icon: () => <Image src="/images/python.svg" alt="Python" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "Python" },
-        { icon: () => <Image src="/images/docker.svg" alt="Docker" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "Docker" },
-        { icon: () => <Image src="/images/terraform.svg" alt="Terraform" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "Terraform" },
+          { icon: () => <Image src="/images/python.svg" alt="Python" width={32} height={32}  />, name: "Python" },
+        { icon: () => <Image src="/images/streamlit.svg" alt="Streamlit" width={32} height={32} />, name: "Streamlit" },
+        { icon: () => <Image src="/images/docker.svg" alt="Docker" width={32} height={32} />, name: "Docker" },
+        { icon: () => <Image src="/images/terraform.svg" alt="Terraform" width={32} height={32}/>, name: "Terraform" },
         { icon: () => <Image src="/images/aws.svg" alt="AWS" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "AWS" }
       ],
       githubUrl: "https://github.com/chrismlittle123/car-rental-sites-scrape",
