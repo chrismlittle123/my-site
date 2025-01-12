@@ -41,8 +41,6 @@ const DataEngineering: React.FC = () => {
   return (
     <ProjectsPage 
       title="Data Engineering"
-      description="Scalable data pipelines and infrastructure"
-      icon={CircleStackIcon}
       projects={projects}
     />
   );

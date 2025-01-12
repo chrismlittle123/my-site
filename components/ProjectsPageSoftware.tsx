@@ -24,12 +24,10 @@ interface ProjectData {
 
 interface ProjectPageProps {
   title: string;
-  description: string;
-  icon: ForwardRefExoticComponent<SVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>>;
   projects: ProjectData[];
 }
 
-const ProjectsPage: React.FC<ProjectPageProps> = ({ title, description, icon: Icon, projects }): React.ReactElement => {
+const ProjectsPage: React.FC<ProjectPageProps> = ({ title, projects }): React.ReactElement => {
   return (
     <div>
       <NavBar />

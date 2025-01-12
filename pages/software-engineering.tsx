@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectsPage from '../components/ProjectsPageSoftware';
-import { CogIcon } from '@heroicons/react/24/outline';
-import Image from 'next/image';
+
 
 const SoftwareEngineering: React.FC = () => {
   const projects = [
@@ -61,8 +60,6 @@ const SoftwareEngineering: React.FC = () => {
   return (
     <ProjectsPage 
       title="Software Engineering"
-      description="Full-stack development"
-      icon={CogIcon}
       projects={projects}
     />
   );

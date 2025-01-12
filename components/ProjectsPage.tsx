@@ -6,7 +6,7 @@ import { CodeBracketIcon } from '@heroicons/react/24/outline';
 
 interface TechnologyProps {
   name: string;
-  icon: ForwardRefExoticComponent<SVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>>;
+  icon: string;
   invert: boolean;
 }
 
@@ -23,8 +23,6 @@ interface ProjectData {
 
 interface ProjectPageProps {
   title: string;
-  description: string;
-  icon: ForwardRefExoticComponent<SVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>>;
   projects: ProjectData[];
 }
 

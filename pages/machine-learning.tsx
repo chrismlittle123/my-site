@@ -38,8 +38,6 @@ const MachineLearning: React.FC = () => {
   return (
     <ProjectsPage 
       title="Machine Learning"
-      description="ML model development and GenAI"
-      icon={CpuChipIcon}
       projects={projects}
     />
   );
