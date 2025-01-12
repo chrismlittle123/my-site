@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
-import NavBar from '../components/NavBar';
+import ProjectNavBar from './ProjectNavBar';
+import NavBar from './NavBar';
 import { ForwardRefExoticComponent, RefAttributes, SVGProps } from 'react';
 
 interface ProjectPageProps {
@@ -13,16 +14,21 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ title, description, icon: Ico
   return (
     <div className="min-h-screen">
       <NavBar />
-      <div className="flex flex-col items-center justify-center min-h-[calc(100vh-64px)]">
-        <Icon className="h-12 w-12 mb-4" />
-        <h1 className="text-4xl font-bold">{title}</h1>
-        <p className="text-lg">{description}</p>
-        <div className="mt-8">
-          {projects.map((project, index) => (
-            <div key={index} className="mb-4">
-              {project}
+      <div className="flex">
+        <ProjectNavBar projects={projects} />
+        <div className="flex-1 flex items-center justify-center min-h-[calc(100vh-64px)] bg-background">
+          <div className="text-center">
+            <Icon className="h-12 w-12 mb-4" />
+            <h1 className="text-4xl font-bold">{title}</h1>
+            <p className="text-lg">{description}</p>
+            <div className="mt-8">
+              {projects.map((project, index) => (
+                <div key={index} id={`project-${index + 1}`} className="mb-4 font-roboto text-2xl uppercase text-black">
+                  {project}
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </div>

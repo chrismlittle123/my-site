@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="bg-black shadow-md">
+    <nav>
       <div className="container mx-auto px-6 py-3">
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex justify-between items-center">
