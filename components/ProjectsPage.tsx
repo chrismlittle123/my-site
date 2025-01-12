@@ -5,8 +5,9 @@ import Image from 'next/image';
 import { CodeBracketIcon } from '@heroicons/react/24/outline';
 
 interface TechnologyProps {
-  icon: ForwardRefExoticComponent<SVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>>;
   name: string;
+  icon: string;
+  invert: boolean;
 }
 
 interface ProjectData {
@@ -26,6 +27,7 @@ interface ProjectPageProps {
   icon: ForwardRefExoticComponent<SVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>>;
   projects: ProjectData[];
 }
+
 const ProjectsPage: React.FC<ProjectPageProps> = ({ title, projects }): React.ReactElement => {
   return (
     <div>
@@ -59,7 +61,11 @@ const ProjectsPage: React.FC<ProjectPageProps> = ({ title, projects }): React.Re
                     <div className="flex flex-wrap gap-4">
                       {project.technologies.map((tech, index) => (
                         <div key={index} className="flex items-center gap-3 text-white">
-                          <tech.icon className="h-6 w-6" />
+                          {tech.invert ? (
+                            <Image src={tech.icon} alt={tech.name} width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />
+                          ) : (
+                            <Image src={tech.icon} alt={tech.name} width={32} height={32} />
+                          )}
                           <span>{tech.name}</span>
                         </div>
                       ))}
