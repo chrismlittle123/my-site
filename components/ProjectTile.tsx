@@ -17,7 +17,7 @@ const ProjectTile: React.FC<ProjectTileProps> = ({ href, icon: Icon, title, desc
       className="bg-black shadow-md p-4 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 max-w-sm mx-auto w-full h-40 flex flex-col items-center justify-center"
     >
       <Icon className={`h-8 w-8 mb-2 ${iconColor}`} />
-      <h2 className="text-xl font-semibold mb-2 text-blue-200">{title}</h2>
+      <h2 className="text-xl font-semibold mb-2">{title}</h2>
       <p className="text-center">{description}</p>
     </Link>
   );

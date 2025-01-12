@@ -23,6 +23,7 @@ const MachineLearning: React.FC = () => {
       description: "A model that predicts long-term solar irradiance trends. The model is trained on a dataset of irradiance data (SolarGIS) and global climate data (ERA5). I used an autoregressive integrated moving average (ARIMA) model to forecast the irradiance data. I then built a forecasting engine that serves a dashboard in Tableau.",
       technologies: [
         { icon: () => <Image src="/images/python.svg" alt="Python" width={32} height={32} />, name: "Python" },
+        { icon: () => <Image src="/images/postgresql.svg" alt="Postgresql" width={32} height={32} />, name: "Postgresql" },
         { icon: () => <Image src="/images/tableau.svg" alt="Tableau" width={32} height={32} />, name: "Tableau" },
       ],
       image: {

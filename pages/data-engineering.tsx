@@ -10,9 +10,9 @@ const DataEngineering: React.FC = () => {
       description: "Developed a data pipeline and backend for a large-scale financial analysis application.\n\nThe app integrated weather data, energy prices, and site-specific data to calculate expected solar site revenues, used by the finance team to make investment decisions. Integrated financial data (Bloomberg API) with weather data (SolarGIS API) and site-specific data (Google Maps API) and processed using Apache Spark.\n\nTime series data on solar production from existing solar sites was also integrated into the tool, data was streamed into a data warehouse using Apache Kafka.",
       technologies: [
         { icon: () => <Image src="/images/python.svg" alt="Python" width={32} height={32} />, name: "Python" },
+        { icon: () => <Image src="/images/postgresql.svg" alt="PostgresSQL" width={32} height={32} />, name: "PostgresSQL" },
         { icon: () => <Image src="/images/apache_spark.svg" alt="Apache Spark" width={32} height={32} />, name: "Apache Spark" },
         { icon: () => <Image src="/images/apache_kafka.svg" alt="Apache Kafka" width={32} height={32} style={{filter: 'brightness(0) invert(1)'}} />, name: "Apache Kafka" },
-        { icon: () => <Image src="/images/postgresql.svg" alt="PostgresSQL" width={32} height={32} />, name: "PostgresSQL" }
       ],
       githubUrl: null,
       image: {
@@ -26,6 +26,7 @@ const DataEngineering: React.FC = () => {
       technologies: [
         { icon: () => <Image src="/images/python.svg" alt="Python" width={32} height={32} />, name: "Python" },
         { icon: () => <Image src="/images/postgresql.svg" alt="PostgresSQL" width={32} height={32} />, name: "PostgresSQL" },
+        { icon: () => <Image src="/images/dbt.svg" alt="dbt" width={32} height={32} />, name: "dbt" },
         { icon: () => <Image src="/images/docker.svg" alt="Docker" width={32} height={32} />, name: "Docker" },
         { icon: () => <Image src="/images/react.svg" alt="React" width={32} height={32}  />, name: "React" }
       ],
