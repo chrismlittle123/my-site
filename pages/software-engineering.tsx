@@ -1,16 +1,16 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
+import ProjectPage from '../components/ProjectPage';
+import { CogIcon } from '@heroicons/react/24/outline';
 
 const SoftwareEngineering: React.FC = () => {
   return (
-    <div className="min-h-screen">
-      <NavBar />
-      <div className="flex flex-col items-center justify-center min-h-[calc(100vh-64px)]">
-        <h1 className="text-4xl font-bold">Software Engineering</h1>
-        <p className="text-lg">This is the Software Engineering page.</p>
-      </div>
-    </div>
+    <ProjectPage 
+      title="Software Engineering" 
+      description="Full-stack development" 
+      icon={CogIcon} 
+      projects={["Software Engineering Project 1", "Software Engineering Project 2"]}
+    />
   );
 };
 
-export default SoftwareEngineering;
+export default SoftwareEngineering; 

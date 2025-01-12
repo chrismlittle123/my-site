@@ -1,16 +1,16 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
+import ProjectPage from '../components/ProjectPage';
+import { CodeBracketIcon } from '@heroicons/react/24/outline';
 
 const PythonPackages: React.FC = () => {
   return (
-    <div className="min-h-screen">
-      <NavBar />
-      <div className="flex flex-col items-center justify-center min-h-[calc(100vh-64px)]">
-        <h1 className="text-4xl font-bold">Python Packages</h1>
-        <p className="text-lg">This is the Python Packages page.</p>
-      </div>
-    </div>
+    <ProjectPage 
+      title="Python Packages" 
+      description="Open-source Python library contributions" 
+      icon={CodeBracketIcon} 
+      projects={["Python Package Project 1", "Python Package Project 2"]}
+    />
   );
 };
 
-export default PythonPackages;
+export default PythonPackages; 

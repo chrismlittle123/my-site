@@ -1,16 +1,16 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
+import ProjectPage from '../components/ProjectPage';
+import { CircleStackIcon } from '@heroicons/react/24/outline';
 
 const DataEngineering: React.FC = () => {
   return (
-    <div className="min-h-screen">
-      <NavBar />
-      <div className="flex flex-col items-center justify-center min-h-[calc(100vh-64px)]">
-        <h1 className="text-4xl font-bold">Data Engineering</h1>
-        <p className="text-lg">This is the Data Engineering page.</p>
-      </div>
-    </div>
+    <ProjectPage 
+      title="Data Engineering" 
+      description="Scalable data pipelines and infrastructure" 
+      icon={CircleStackIcon} 
+      projects={["Data Engineering Project 1", "Data Engineering Project 2"]}
+    />
   );
 };
 
-export default DataEngineering;
+export default DataEngineering; 
