@@ -13,7 +13,7 @@ interface ProjectData {
   title: string;
   description: string;
   technologies: TechnologyProps[];
-  githubUrl: string;
+  githubUrl: string | null;
   image?: {
     src: string;
     alt: string;
@@ -66,10 +66,12 @@ const ProjectsPage: React.FC<ProjectPageProps> = ({ title, description, icon: Ic
                       ))}
                     </div>
                   </div>
-                  <a href={project.githubUrl} className="text-blue-300 hover:text-blue-200 transition flex items-center gap-2">
-                    <CodeBracketIcon className="h-4 w-4" />
-                    View on GitHub →
-                  </a>
+                  {project.githubUrl && (
+                    <a href={project.githubUrl} className="text-blue-300 hover:text-blue-200 transition flex items-center gap-2">
+                      <CodeBracketIcon className="h-4 w-4" />
+                      View on GitHub →
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
