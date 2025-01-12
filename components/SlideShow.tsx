@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
@@ -9,25 +9,15 @@ interface SlideShowProps {
   }[];
   width?: number;
   height?: number;
-  autoPlayInterval?: number;
 }
 
 const SlideShow: React.FC<SlideShowProps> = ({ 
   images, 
   width = 500, 
-  height = 500,
-  autoPlayInterval = 5000 
+  height = 500
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      moveSlide('right');
-    }, autoPlayInterval);
-
-    return () => clearInterval(interval);
-  }, [autoPlayInterval]);
 
   const moveSlide = (direction: 'left' | 'right') => {
     if (isTransitioning) return;
