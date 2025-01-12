@@ -14,6 +14,10 @@ interface ProjectData {
   description: string;
   technologies: TechnologyProps[];
   githubUrl: string;
+  image?: {
+    src: string;
+    alt: string;
+  };
 }
 
 interface ProjectPageProps {
@@ -30,16 +34,27 @@ const ProjectsPage: React.FC<ProjectPageProps> = ({ title, description, icon: Ic
       <div className="relative">
         <Image src="/images/colours.png" alt="Background" layout="fill" className="object-cover opacity-70" />
         <div className="relative z-10 p-8">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h1 className="text-5xl font-bold text-white mb-12 text-center">{title}</h1>
 
-            <div className="grid grid-cols-2 gap-x-16">
+            <div className="grid grid-cols-2 gap-x-20">
               {projects.map((project, projectIndex) => (
                 <div key={projectIndex} className="bg-black bg-opacity-60 rounded-lg p-6">
                   <h2 className="text-4xl font-bold mb-6 text-center">{project.title}</h2>
                   <p className="text-gray-100 mb-6 text-lg whitespace-pre-wrap">
                     {project.description}
                   </p>
+                  {project.image && (
+                    <div className="mb-6">
+                      <Image 
+                        src={`/images/${project.image.src}`}
+                        alt={project.image.alt}
+                        width={500}
+                        height={300}
+                        className="rounded-lg"
+                      />
+                    </div>
+                  )}
                   <div className="mb-6">
                     <h3 className="text-2xl font-bold text-white mb-4">Technologies Used</h3>
                     <div className="flex flex-wrap gap-4">
