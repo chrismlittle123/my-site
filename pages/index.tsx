@@ -12,10 +12,10 @@ const HomePage: React.FC = () => {
         <Image src="/images/me.jpeg" alt="My Photo" width={150} height={150} className="rounded-full mb-8" />
         <h1 className="text-4xl font-bold mb-8">Christopher Little — Data Engineer</h1>
 
-        <p className="text-lg mb-20">Welcome to my personal portfolio site.</p>
+        <p className="text-lg mb-14">Welcome to my personal portfolio site.</p>
         <div className="grid grid-cols-3 gap-x-24 mb-24 w-full max-w-2xl mx-auto">
           <a href="https://linkedin.com" className="hover:opacity-75 transition flex flex-col items-center">
-            <LinkIcon className="h-8 w-8 mb-4 text-red-600" />
+            <LinkIcon className="h-8 w-8 mb-4 text-blue-600" />
             <span className="text-xl font-mono">LinkedIn</span>
           </a>
           <a href="https://github.com" className="hover:opacity-75 transition flex flex-col items-center">
@@ -23,7 +23,7 @@ const HomePage: React.FC = () => {
             <span className="text-xl font-mono">GitHub</span>
           </a>
           <a href="/cv" className="hover:opacity-75 transition flex flex-col items-center">
-            <DocumentTextIcon className="h-8 w-8 mb-4 text-red-600" />
+            <DocumentTextIcon className="h-8 w-8 mb-4 text-purple-600" />
             <span className="text-xl font-mono">CV</span>
           </a>
         </div>
