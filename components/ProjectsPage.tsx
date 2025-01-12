@@ -38,7 +38,7 @@ const ProjectsPage: React.FC<ProjectPageProps> = ({ title, description, icon: Ic
               {projects.map((project, projectIndex) => (
                 <div key={projectIndex}>
                   <h2 className="text-4xl font-bold text-purple-200 mb-6 text-center">{project.title}</h2>
-                  <p className="text-gray-100 mb-6 text-lg">
+                  <p className="text-gray-100 mb-6 text-lg whitespace-pre-wrap">
                     {project.description}
                   </p>
                   <div className="mb-6">
