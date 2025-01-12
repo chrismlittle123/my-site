@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectPage from '../components/ProjectPage';
+import ProjectPage from '../components/ProjectsPage';
 import { CpuChipIcon } from '@heroicons/react/24/outline';
 
 const MachineLearning: React.FC = () => {

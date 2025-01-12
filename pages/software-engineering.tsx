@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectPage from '../components/ProjectPage';
+import ProjectPage from '../components/ProjectsPage';
 import { CogIcon } from '@heroicons/react/24/outline';
 
 const SoftwareEngineering: React.FC = () => {
