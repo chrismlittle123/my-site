@@ -45,12 +45,12 @@ const HomePage: React.FC = () => {
               <p className="text-center">Scalable data pipelines and infrastructure</p>
             </Link>
             <Link href="/software-engineering" className="bg-black shadow-md p-4 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 max-w-sm mx-auto w-full h-40 flex flex-col items-center justify-center">
-              <CogIcon className="h-8 w-8 mb-2 text-purple-700" />
+              <CogIcon className="h-8 w-8 mb-2 text-red-700" />
               <h2 className="text-xl font-semibold mb-2 text-blue-200">Software Engineering</h2>
               <p className="text-center">Full-stack development</p>
             </Link>
             <Link href="/machine-learning" className="bg-black shadow-md p-4 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 max-w-sm mx-auto w-full h-40 flex flex-col items-center justify-center">
-              <CpuChipIcon className="h-8 w-8 mb-2 text-purple-700" />
+              <CpuChipIcon className="h-8 w-8 mb-2 text-red-700" />
               <h2 className="text-xl font-semibold mb-2 text-blue-200">Machine Learning</h2>
               <p className="text-center">ML model development and GenAI</p>
             </Link>
