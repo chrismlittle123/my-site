@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-black shadow-md">
       <div className="container mx-auto px-6 py-3">
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex justify-between items-center">
@@ -14,11 +14,11 @@ const NavBar: React.FC = () => {
             </div>
           </div>
           <div className="flex items-center mt-4 md:mt-0">
-            <Link href="/" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
-            <Link href="/data-engineering" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Data Engineering</Link>
-            <Link href="/software-engineering" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Software Engineering</Link>
-            <Link href="/machine-learning" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Machine Learning</Link>
-            <Link href="/python-packages" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Python Packages</Link>
+            <Link href="/" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
+            <Link href="/data-engineering" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Data Engineering</Link>
+            <Link href="/software-engineering" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Software Engineering</Link>
+            <Link href="/machine-learning" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Machine Learning</Link>
+            <Link href="/python-packages" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Python Packages</Link>
           </div>
         </div>
       </div>

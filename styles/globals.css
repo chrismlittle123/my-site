@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: 210 40% 99%;
-    --foreground: 222 47% 11%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
     --card: 0 0% 100%;
     --card-foreground: 222 47% 11%;
@@ -83,7 +83,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-white;
   }
 }
 
@@ -182,4 +182,13 @@
 
 .animate-confetti {
   animation: confetti 4s ease-out forwards;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  color: white;
 } 
