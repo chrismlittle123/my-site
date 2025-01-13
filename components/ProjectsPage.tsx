@@ -36,7 +36,7 @@ const ProjectsPage: React.FC<ProjectPageProps> = ({ title, projects }): React.Re
           <div className="max-w-6xl mx-auto">
             <h1 className="text-5xl font-bold text-white mb-12 text-center">{title}</h1>
 
-            <div className="grid grid-cols-2 gap-x-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">
               {projects.map((project, projectIndex) => (
                 <div key={projectIndex} className="bg-black bg-opacity-60 rounded-lg p-6">
                   <h2 className="text-4xl font-bold mb-6 text-center">{project.title}</h2>
