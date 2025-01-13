@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import Image from 'next/image';
-import Link from 'next/link';
 import { DocumentTextIcon, LinkIcon, CodeBracketIcon, CpuChipIcon, CogIcon, CircleStackIcon } from '@heroicons/react/24/outline';
 import ProjectTile from '../components/ProjectTile';
 
@@ -11,7 +10,7 @@ const HomePage: React.FC = () => {
       <NavBar />
       <header className="flex flex-col items-center justify-center pt-20">
         <Image src="/images/me.jpeg" alt="My Photo" width={150} height={150} className="rounded-full mb-8" />
-        <h1 className="text-4xl font-bold mb-8">Christopher Little — Data Engineer</h1>
+        <h1 className="text-4xl font-bold mb-8">Christopher Little — Data Consultant</h1>
 
         <p className="text-lg mb-14">Welcome to my personal portfolio site.</p>
         <div className="grid grid-cols-3 gap-x-24 mb-24 w-full max-w-2xl mx-auto">
