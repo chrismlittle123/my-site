@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
             <CodeBracketIcon className="h-8 w-8 mb-4 text-red-600" />
             <span className="text-xl font-mono">GitHub</span>
           </a>
-          <a href="https://drive.google.com/uc?export=download&id=1W2OnNY2jQD9koZSG2VH4wFZ160tCxQUN" className="hover:opacity-75 transition flex flex-col items-center">
+          <a href="https://drive.google.com/file/d/1W2OnNY2jQD9koZSG2VH4wFZ160tCxQUN/view?usp=sharing" className="hover:opacity-75 transition flex flex-col items-center">
             <DocumentTextIcon className="h-8 w-8 mb-4 text-purple-600" />
             <span className="text-xl font-mono">CV</span>
           </a>
