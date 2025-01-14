@@ -34,7 +34,8 @@ const ProjectsPage: React.FC<ProjectPageProps> = ({ title, projects }): React.Re
         <Image src="/images/colours.png" alt="Background" layout="fill" className="object-cover opacity-70" />
         <div className="relative z-10 p-8">
           <div className="max-w-6xl mx-auto">
-            <h1 className="text-5xl font-bold text-white mb-12 text-center">{title}</h1>
+            
+            <h1 className="text-5xl font-bold text-white mb-16 mt-4 text-center">{title}</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">
               {projects.map((project, projectIndex) => (
