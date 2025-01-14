@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
+    --background: 222 47% 11%;
     --foreground: 0 0% 100%;
 
     --card: 0 0% 100%;
@@ -179,7 +179,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: hsl(222, 47%, 11%);
   color: white;
 }
 
