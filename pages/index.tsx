@@ -47,26 +47,13 @@ const HomePage: React.FC = () => {
               iconColor="text-purple-700"
             />
             <ProjectTile
-              href="/software-engineering"
-              icon={CogIcon}
-              title="Software Engineering"
-              description="Full-stack development"
-              iconColor="text-red-700"
-            />
-            <ProjectTile
               href="/machine-learning"
               icon={CpuChipIcon}
               title="Machine Learning"
               description="ML and statistical model development and deployment"
               iconColor="text-red-700"
             />
-            <ProjectTile
-              href="/python-packages"
-              icon={CodeBracketIcon}
-              title="Python Packages"
-              description="Open-source Python package contributions"
-              iconColor="text-purple-700"
-            />
+
           </div>
         </div>
       </main>
