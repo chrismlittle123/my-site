@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
       <NavBar />
       <header className="flex flex-col items-center justify-center pt-20">
         <Image src="/images/me.jpeg" alt="My Photo" width={150} height={150} className="rounded-full mb-8" />
-        <h1 className="text-4xl font-bold mb-8 text-center">Christopher Little — Data Consultant</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Christopher Little — Data & AI Engineer</h1>
 
         <p className="text-lg mb-14">Welcome to my personal portfolio site.</p>
         <div className="grid grid-cols-3 gap-x-8 mb-24 w-full max-w-2xl mx-auto">
